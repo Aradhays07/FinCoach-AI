@@ -258,7 +258,7 @@ export function Signup() {
         <form onSubmit={goNext} className={s.form} noValidate>
           {serverErr && <div className={s.err}>{serverErr}</div>}
           <div className={s.row}>
-            <Input label="Full name"  type="text" placeholder="Aradhay Saxena" icon={User}
+            <Input label="Full name"  type="text" placeholder="John Doe" icon={User}
               value={form.name}    onChange={set('name')}    error={errors.name} />
             <Input label="Company"    type="text" placeholder="Acme NBFC"       icon={Building2}
               value={form.company} onChange={set('company')} />
